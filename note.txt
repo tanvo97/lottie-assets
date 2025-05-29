@@ -1,0 +1,8 @@
+cover png to webp
+cwebp input.png -o output.webp
+
+mkdir -p webp_output
+
+for file in *.png; do
+  cwebp -q "$file" -o "webp_output/${file%.png}.webp"
+done
