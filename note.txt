@@ -6,3 +6,4 @@ mkdir -p webp_output
 for file in *.png; do
   cwebp -q "$file" -o "webp_output/${file%.png}.webp"
 done
+
